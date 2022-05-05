@@ -1,0 +1,12 @@
+E:\Workspace\Learning\CSharp\Projetos\TestesDeSoftware\TDD\NerdStore.Core\bin\Debug\net6.0\NerdStore.Core.deps.json
+E:\Workspace\Learning\CSharp\Projetos\TestesDeSoftware\TDD\NerdStore.Core\bin\Debug\net6.0\NerdStore.Core.dll
+E:\Workspace\Learning\CSharp\Projetos\TestesDeSoftware\TDD\NerdStore.Core\bin\Debug\net6.0\NerdStore.Core.pdb
+E:\Workspace\Learning\CSharp\Projetos\TestesDeSoftware\TDD\NerdStore.Core\obj\Debug\net6.0\NerdStore.Core.csproj.AssemblyReference.cache
+E:\Workspace\Learning\CSharp\Projetos\TestesDeSoftware\TDD\NerdStore.Core\obj\Debug\net6.0\NerdStore.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\Workspace\Learning\CSharp\Projetos\TestesDeSoftware\TDD\NerdStore.Core\obj\Debug\net6.0\NerdStore.Core.AssemblyInfoInputs.cache
+E:\Workspace\Learning\CSharp\Projetos\TestesDeSoftware\TDD\NerdStore.Core\obj\Debug\net6.0\NerdStore.Core.AssemblyInfo.cs
+E:\Workspace\Learning\CSharp\Projetos\TestesDeSoftware\TDD\NerdStore.Core\obj\Debug\net6.0\NerdStore.Core.csproj.CoreCompileInputs.cache
+E:\Workspace\Learning\CSharp\Projetos\TestesDeSoftware\TDD\NerdStore.Core\obj\Debug\net6.0\NerdStore.Core.dll
+E:\Workspace\Learning\CSharp\Projetos\TestesDeSoftware\TDD\NerdStore.Core\obj\Debug\net6.0\refint\NerdStore.Core.dll
+E:\Workspace\Learning\CSharp\Projetos\TestesDeSoftware\TDD\NerdStore.Core\obj\Debug\net6.0\NerdStore.Core.pdb
+E:\Workspace\Learning\CSharp\Projetos\TestesDeSoftware\TDD\NerdStore.Core\obj\Debug\net6.0\ref\NerdStore.Core.dll

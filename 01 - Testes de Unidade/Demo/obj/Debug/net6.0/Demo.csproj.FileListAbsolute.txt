@@ -1,0 +1,12 @@
+E:\Workspace\Learning\CSharp\Projetos\TestesDeSoftware\01 - Testes de Unidade\Demo\bin\Debug\net6.0\Demo.deps.json
+E:\Workspace\Learning\CSharp\Projetos\TestesDeSoftware\01 - Testes de Unidade\Demo\bin\Debug\net6.0\Demo.dll
+E:\Workspace\Learning\CSharp\Projetos\TestesDeSoftware\01 - Testes de Unidade\Demo\bin\Debug\net6.0\Demo.pdb
+E:\Workspace\Learning\CSharp\Projetos\TestesDeSoftware\01 - Testes de Unidade\Demo\obj\Debug\net6.0\Demo.csproj.AssemblyReference.cache
+E:\Workspace\Learning\CSharp\Projetos\TestesDeSoftware\01 - Testes de Unidade\Demo\obj\Debug\net6.0\Demo.GeneratedMSBuildEditorConfig.editorconfig
+E:\Workspace\Learning\CSharp\Projetos\TestesDeSoftware\01 - Testes de Unidade\Demo\obj\Debug\net6.0\Demo.AssemblyInfoInputs.cache
+E:\Workspace\Learning\CSharp\Projetos\TestesDeSoftware\01 - Testes de Unidade\Demo\obj\Debug\net6.0\Demo.AssemblyInfo.cs
+E:\Workspace\Learning\CSharp\Projetos\TestesDeSoftware\01 - Testes de Unidade\Demo\obj\Debug\net6.0\Demo.csproj.CoreCompileInputs.cache
+E:\Workspace\Learning\CSharp\Projetos\TestesDeSoftware\01 - Testes de Unidade\Demo\obj\Debug\net6.0\Demo.dll
+E:\Workspace\Learning\CSharp\Projetos\TestesDeSoftware\01 - Testes de Unidade\Demo\obj\Debug\net6.0\refint\Demo.dll
+E:\Workspace\Learning\CSharp\Projetos\TestesDeSoftware\01 - Testes de Unidade\Demo\obj\Debug\net6.0\Demo.pdb
+E:\Workspace\Learning\CSharp\Projetos\TestesDeSoftware\01 - Testes de Unidade\Demo\obj\Debug\net6.0\ref\Demo.dll
