@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "xBCH31ZgwjQxmF/keCZIMBuTIlwdMlu4jNn3oIR91AE+iiN8s6VyrSNOR9PCGoe1GSJKI3bO+uCfdWwVwjmb8g==",
+  "dgSpecHash": "Dpf+Er0aahPitL8hcQxNhTCv2iPR1vzLYhfbe+G2YffNPiyCWb4UPa6xFdzTbp18ESJhrMpKtFznVznU/1t0Pw==",
   "success": true,
-  "projectFilePath": "D:\\Workspace\\Learning\\CSharp\\Projetos\\TestesDeSoftware\\TDD\\NerdStore.Vendas.Domain\\NerdStore.Vendas.Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\felipe.giron\\Documents\\Workspace\\testes-de-software\\TDD\\NerdStore.Vendas.Domain\\NerdStore.Vendas.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\felipe.giron\\.nuget\\packages\\fluentvalidation\\11.0.1\\fluentvalidation.11.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -2,6 +2,7 @@
 using System;
 using System.Linq;
 using Xunit;
+using static NerdStore.Vendas.Domain.Voucher;
 
 namespace NerdStore.Vendas.Domain.Tests
 {
@@ -49,10 +50,10 @@ namespace NerdStore.Vendas.Domain.Tests
             // Arrange
             var pedido = Pedido.PedidoFactory.NovoPedidoRascunho(Guid.NewGuid());
             var produtoId = Guid.NewGuid();
-            var pedidoItem = new PedidoItem(produtoId, "Produto Teste", Pedido.MAX_UNIDADES_ITEM+1, 100);
+            var pedidoItem = new PedidoItem(produtoId, "Produto Teste", Pedido.MAX_UNIDADES_ITEM + 1, 100);
 
             // Act // Assert
-            Assert.Throws<DomainException>( () => pedido.AdicionarItem(pedidoItem));
+            Assert.Throws<DomainException>(() => pedido.AdicionarItem(pedidoItem));
         }
 
         [Fact(DisplayName = "Adicionar Item Pedido Existente Acima do Permitido")]
@@ -144,7 +145,7 @@ namespace NerdStore.Vendas.Domain.Tests
             var pedidoItem = new PedidoItem(produtoId, "Produto Teste", 5, 100);
             pedido.AdicionarItem(pedidoItem);
 
-            var pedidoItemAtualizado = new PedidoItem(produtoId, "Produto Teste", Pedido.MAX_UNIDADES_ITEM+1, 80);
+            var pedidoItemAtualizado = new PedidoItem(produtoId, "Produto Teste", Pedido.MAX_UNIDADES_ITEM + 1, 80);
 
             // Act       
             // Assert
@@ -158,7 +159,7 @@ namespace NerdStore.Vendas.Domain.Tests
             // Arrange
             var pedido = Pedido.PedidoFactory.NovoPedidoRascunho(Guid.NewGuid());
             var pedidoItem = new PedidoItem(Guid.NewGuid(), "Produto Teste", 5, 100);
-            
+
             // Act       
             // Assert
             Assert.Throws<DomainException>(() => pedido.RemoverItem(pedidoItem));
@@ -181,6 +182,38 @@ namespace NerdStore.Vendas.Domain.Tests
             pedido.RemoverItem(pedidoItem1);
             // Assert
             Assert.Equal(expected, pedido.ValorTotal);
+        }
+
+        [Fact(DisplayName = "Aplicar Voucher Válido")]
+        [Trait("Categoria", "Vendas - Pedido")]
+        public void Pedido_AplicarVoucherValido_DeveRetornarSemErros()
+        {
+            // Arrange
+            var pedido = Pedido.PedidoFactory.NovoPedidoRascunho(Guid.NewGuid());
+            var voucher = new Voucher("PROMO-15-REAIS", null, 15, TipoDescontoVoucher.Porcentagem, 1,
+                DateTime.Now.AddDays(15), true, false);
+
+            // Act
+            var result = pedido.AplicarVoucher(voucher);
+
+            // Assert
+            Assert.True(result.IsValid);
+        }
+
+        [Fact(DisplayName = "Aplicar Voucher Inválido")]
+        [Trait("Categoria", "Vendas - Pedido")]
+        public void Pedido_AplicarVoucherInvalido_DeveRetornaComErros()
+        {
+            // Arrange
+            var pedido = Pedido.PedidoFactory.NovoPedidoRascunho(Guid.NewGuid());
+            var voucher = new Voucher("", null, 15, TipoDescontoVoucher.Porcentagem, 1,
+                DateTime.Now.AddDays(15), true, false);
+
+            // Act
+            var result = pedido.AplicarVoucher(voucher);
+
+            // Assert
+            Assert.False(result.IsValid);
         }
     }
 }

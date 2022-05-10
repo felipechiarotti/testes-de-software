@@ -1,4 +1,5 @@
-﻿using NerdStore.Core.DomainObjects;
+﻿using FluentValidation.Results;
+using NerdStore.Core.DomainObjects;
 
 namespace NerdStore.Vendas.Domain
 {
@@ -8,6 +9,8 @@ namespace NerdStore.Vendas.Domain
         public static int MIN_UNIDADES_ITEM => 1;
         public Guid ClienteId { get; private set; }
         public decimal ValorTotal { get; private set; }
+        public Voucher Voucher { get; private set; }
+        public bool VoucherAplicado { get; private set; }
 
         private readonly List<PedidoItem> _pedidoItems;
         public IReadOnlyCollection<PedidoItem> PedidoItems => _pedidoItems;
@@ -49,6 +52,19 @@ namespace NerdStore.Vendas.Domain
 
             if(quantidadeItens > MAX_UNIDADES_ITEM)
                 throw new DomainException($"Máximo de {MAX_UNIDADES_ITEM} unidades por produto");
+        }
+
+        public ValidationResult AplicarVoucher(Voucher voucher)
+        {
+            var result = voucher.EhValido();
+
+            if (!result.IsValid)
+                return result;
+
+            Voucher = voucher;
+            VoucherAplicado = true;
+
+            return result;
         }
 
         public void AdicionarItem(PedidoItem item)

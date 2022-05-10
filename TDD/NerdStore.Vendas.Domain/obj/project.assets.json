@@ -2,9 +2,21 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "FluentValidation/11.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/FluentValidation.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/FluentValidation.dll": {}
+        }
+      },
       "NerdStore.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "FluentValidation": "11.0.1"
+        },
         "compile": {
           "bin/placeholder/NerdStore.Core.dll": {}
         },
@@ -15,6 +27,27 @@
     }
   },
   "libraries": {
+    "FluentValidation/11.0.1": {
+      "sha512": "fcL5zF/glDwskUtpL0IfBupVWTChxOOvVs+dAA7Gme5NjIeJBiFKWq3eZV1O+AigucnBTr8SWG7wRRn+PgFnTw==",
+      "type": "package",
+      "path": "fluentvalidation/11.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.11.0.1.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net5.0/FluentValidation.dll",
+        "lib/net5.0/FluentValidation.xml",
+        "lib/net6.0/FluentValidation.dll",
+        "lib/net6.0/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml",
+        "lib/netstandard2.1/FluentValidation.dll",
+        "lib/netstandard2.1/FluentValidation.xml"
+      ]
+    },
     "NerdStore.Core/1.0.0": {
       "type": "project",
       "path": "../NerdStore.Core/NerdStore.Core.csproj",
@@ -27,23 +60,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\felip\\.nuget\\packages\\": {},
+    "C:\\Users\\felipe.giron\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Workspace\\Learning\\CSharp\\Projetos\\TestesDeSoftware\\TDD\\NerdStore.Vendas.Domain\\NerdStore.Vendas.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\felipe.giron\\Documents\\Workspace\\testes-de-software\\TDD\\NerdStore.Vendas.Domain\\NerdStore.Vendas.Domain.csproj",
       "projectName": "NerdStore.Vendas.Domain",
-      "projectPath": "D:\\Workspace\\Learning\\CSharp\\Projetos\\TestesDeSoftware\\TDD\\NerdStore.Vendas.Domain\\NerdStore.Vendas.Domain.csproj",
-      "packagesPath": "C:\\Users\\felip\\.nuget\\packages\\",
-      "outputPath": "D:\\Workspace\\Learning\\CSharp\\Projetos\\TestesDeSoftware\\TDD\\NerdStore.Vendas.Domain\\obj\\",
+      "projectPath": "C:\\Users\\felipe.giron\\Documents\\Workspace\\testes-de-software\\TDD\\NerdStore.Vendas.Domain\\NerdStore.Vendas.Domain.csproj",
+      "packagesPath": "C:\\Users\\felipe.giron\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\felipe.giron\\Documents\\Workspace\\testes-de-software\\TDD\\NerdStore.Vendas.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\felip\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\felipe.giron\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -58,8 +91,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Workspace\\Learning\\CSharp\\Projetos\\TestesDeSoftware\\TDD\\NerdStore.Core\\NerdStore.Core.csproj": {
-              "projectPath": "D:\\Workspace\\Learning\\CSharp\\Projetos\\TestesDeSoftware\\TDD\\NerdStore.Core\\NerdStore.Core.csproj"
+            "C:\\Users\\felipe.giron\\Documents\\Workspace\\testes-de-software\\TDD\\NerdStore.Core\\NerdStore.Core.csproj": {
+              "projectPath": "C:\\Users\\felipe.giron\\Documents\\Workspace\\testes-de-software\\TDD\\NerdStore.Core\\NerdStore.Core.csproj"
             }
           }
         }
@@ -88,7 +121,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Workspace\\Learning\\CSharp\\Projetos\\TestesDeSoftware\\01 - Testes de Unidade\\Features\\Features.csproj": {}
+    "C:\\Users\\felipe.giron\\Documents\\Workspace\\testes-de-software\\01 - Testes de Unidade\\Features\\Features.csproj": {}
   },
   "projects": {
-    "D:\\Workspace\\Learning\\CSharp\\Projetos\\TestesDeSoftware\\01 - Testes de Unidade\\Features\\Features.csproj": {
+    "C:\\Users\\felipe.giron\\Documents\\Workspace\\testes-de-software\\01 - Testes de Unidade\\Features\\Features.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Workspace\\Learning\\CSharp\\Projetos\\TestesDeSoftware\\01 - Testes de Unidade\\Features\\Features.csproj",
+        "projectUniqueName": "C:\\Users\\felipe.giron\\Documents\\Workspace\\testes-de-software\\01 - Testes de Unidade\\Features\\Features.csproj",
         "projectName": "Features",
-        "projectPath": "D:\\Workspace\\Learning\\CSharp\\Projetos\\TestesDeSoftware\\01 - Testes de Unidade\\Features\\Features.csproj",
-        "packagesPath": "C:\\Users\\felip\\.nuget\\packages\\",
-        "outputPath": "D:\\Workspace\\Learning\\CSharp\\Projetos\\TestesDeSoftware\\01 - Testes de Unidade\\Features\\obj\\",
+        "projectPath": "C:\\Users\\felipe.giron\\Documents\\Workspace\\testes-de-software\\01 - Testes de Unidade\\Features\\Features.csproj",
+        "packagesPath": "C:\\Users\\felipe.giron\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\felipe.giron\\Documents\\Workspace\\testes-de-software\\01 - Testes de Unidade\\Features\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\felip\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\felipe.giron\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -68,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

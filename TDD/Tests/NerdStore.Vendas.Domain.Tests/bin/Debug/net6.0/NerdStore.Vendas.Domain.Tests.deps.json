@@ -19,6 +19,14 @@
         }
       },
       "coverlet.collector/3.1.0": {},
+      "FluentValidation/11.0.1": {
+        "runtime": {
+          "lib/net6.0/FluentValidation.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.1.0"
+          }
+        }
+      },
       "Microsoft.CodeCoverage/16.11.0": {
         "runtime": {
           "lib/netcoreapp1.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {
@@ -1091,6 +1099,9 @@
       },
       "xunit.runner.visualstudio/2.4.3": {},
       "NerdStore.Core/1.0.0": {
+        "dependencies": {
+          "FluentValidation": "11.0.1"
+        },
         "runtime": {
           "NerdStore.Core.dll": {}
         }
@@ -1117,6 +1128,13 @@
       "sha512": "sha512-YzYqSRrjoP5lULBhTDcTOjuM4IDPPi6PhFsl4w8EI4WdZhE6llt7E38Tg4CHyrS+QKwyu1+9OwkdDgluOdoBTw==",
       "path": "coverlet.collector/3.1.0",
       "hashPath": "coverlet.collector.3.1.0.nupkg.sha512"
+    },
+    "FluentValidation/11.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fcL5zF/glDwskUtpL0IfBupVWTChxOOvVs+dAA7Gme5NjIeJBiFKWq3eZV1O+AigucnBTr8SWG7wRRn+PgFnTw==",
+      "path": "fluentvalidation/11.0.1",
+      "hashPath": "fluentvalidation.11.0.1.nupkg.sha512"
     },
     "Microsoft.CodeCoverage/16.11.0": {
       "type": "package",

@@ -22,3 +22,15 @@ D:\Workspace\Learning\CSharp\Projetos\TestesDeSoftware\TDD\NerdStore.Core\obj\De
 D:\Workspace\Learning\CSharp\Projetos\TestesDeSoftware\TDD\NerdStore.Core\obj\Debug\net6.0\refint\NerdStore.Core.dll
 D:\Workspace\Learning\CSharp\Projetos\TestesDeSoftware\TDD\NerdStore.Core\obj\Debug\net6.0\NerdStore.Core.pdb
 D:\Workspace\Learning\CSharp\Projetos\TestesDeSoftware\TDD\NerdStore.Core\obj\Debug\net6.0\ref\NerdStore.Core.dll
+C:\Users\felipe.giron\Documents\Workspace\testes-de-software\TDD\NerdStore.Core\bin\Debug\net6.0\NerdStore.Core.deps.json
+C:\Users\felipe.giron\Documents\Workspace\testes-de-software\TDD\NerdStore.Core\bin\Debug\net6.0\NerdStore.Core.dll
+C:\Users\felipe.giron\Documents\Workspace\testes-de-software\TDD\NerdStore.Core\bin\Debug\net6.0\NerdStore.Core.pdb
+C:\Users\felipe.giron\Documents\Workspace\testes-de-software\TDD\NerdStore.Core\obj\Debug\net6.0\NerdStore.Core.csproj.AssemblyReference.cache
+C:\Users\felipe.giron\Documents\Workspace\testes-de-software\TDD\NerdStore.Core\obj\Debug\net6.0\NerdStore.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\felipe.giron\Documents\Workspace\testes-de-software\TDD\NerdStore.Core\obj\Debug\net6.0\NerdStore.Core.AssemblyInfoInputs.cache
+C:\Users\felipe.giron\Documents\Workspace\testes-de-software\TDD\NerdStore.Core\obj\Debug\net6.0\NerdStore.Core.AssemblyInfo.cs
+C:\Users\felipe.giron\Documents\Workspace\testes-de-software\TDD\NerdStore.Core\obj\Debug\net6.0\NerdStore.Core.csproj.CoreCompileInputs.cache
+C:\Users\felipe.giron\Documents\Workspace\testes-de-software\TDD\NerdStore.Core\obj\Debug\net6.0\NerdStore.Core.dll
+C:\Users\felipe.giron\Documents\Workspace\testes-de-software\TDD\NerdStore.Core\obj\Debug\net6.0\refint\NerdStore.Core.dll
+C:\Users\felipe.giron\Documents\Workspace\testes-de-software\TDD\NerdStore.Core\obj\Debug\net6.0\NerdStore.Core.pdb
+C:\Users\felipe.giron\Documents\Workspace\testes-de-software\TDD\NerdStore.Core\obj\Debug\net6.0\ref\NerdStore.Core.dll
