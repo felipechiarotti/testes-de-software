@@ -8,6 +8,7 @@ namespace NerdStore.Vendas.Domain
         public static int MIN_UNIDADES_ITEM => 1;
         public Guid ClienteId { get; private set; }
         public decimal ValorTotal { get; private set; }
+
         private readonly List<PedidoItem> _pedidoItems;
         public IReadOnlyCollection<PedidoItem> PedidoItems => _pedidoItems;
         public PedidoStatus PedidoStatus { get; private set; }
@@ -25,6 +26,12 @@ namespace NerdStore.Vendas.Domain
         private bool PedidoItemExistente(PedidoItem item)
         {
             return _pedidoItems.Any(p => p.ProdutoId == item.ProdutoId);
+        }
+
+        private void ValidarPedidoItemInexistente(PedidoItem pedidoItem)
+        {
+            if (!PedidoItemExistente(pedidoItem))
+                throw new DomainException($"Item {pedidoItem.ProdutoId} não foi encontrado no pedido");
         }
 
         private PedidoItem ObterPedidoItemPorId(Guid produtoItemId)
@@ -57,6 +64,28 @@ namespace NerdStore.Vendas.Domain
                 _pedidoItems.Remove(itemExistente);
             }
             _pedidoItems.Add(item);
+            CalcularValorPedido();
+        }
+
+        public void AtualizarItem(PedidoItem pedidoItem)
+        {
+            ValidarPedidoItemInexistente(pedidoItem);
+            ValidarQuantidadeItemPermitida(pedidoItem);
+
+            var itemExistente = ObterPedidoItemPorId(pedidoItem.ProdutoId);
+
+            _pedidoItems.Remove(itemExistente);
+            _pedidoItems.Add(pedidoItem);
+
+            CalcularValorPedido();
+        }
+
+        public void RemoverItem(PedidoItem pedidoItem)
+        {
+            ValidarPedidoItemInexistente(pedidoItem);
+
+            _pedidoItems.Remove(pedidoItem);
+
             CalcularValorPedido();
         }
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FbLy253VqqxFVA1ONEHxPPUG7yXit/0J99yt7lZrRBekhJjTZud07nbQgd/IV6klAOjjAOmiN2lLrKUm00ydsA==",
+  "dgSpecHash": "sIdfjTBtRV3N5EK2QsIdFOU3RQi1FTj/z47RxJ5qBNJgrtQClf51/alMNY6WSV59fVWGH2dzSgHFyK28+vdamA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\felipe.giron\\Documents\\Workspace\\TestesDeSoftware\\TDD\\NerdStore.Application\\NerdStore.Vendas.Application.csproj",
+  "projectFilePath": "D:\\Workspace\\Learning\\CSharp\\Projetos\\TestesDeSoftware\\TDD\\NerdStore.Application\\NerdStore.Vendas.Application.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

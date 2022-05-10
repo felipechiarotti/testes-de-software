@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qBeuWlSA9T8wGSEJWRjdIVlnkXls7nU+dr3x8svIdGhYskzRFpznXs7yi5bWHda3mZPZLaAELQlFyWenKIOg0w==",
+  "dgSpecHash": "jAYoD4UxrvCe6mzR3T8q+84VWHEjnEw4+f4eM0OHSrIFvrDBfeS4UKyalu1MqauXJVnf9r1iohUI4VmupmjIXQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\felipe.giron\\Documents\\Workspace\\TestesDeSoftware\\01 - Testes de Unidade\\Demo\\Demo.csproj",
+  "projectFilePath": "D:\\Workspace\\Learning\\CSharp\\Projetos\\TestesDeSoftware\\01 - Testes de Unidade\\Demo\\Demo.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
