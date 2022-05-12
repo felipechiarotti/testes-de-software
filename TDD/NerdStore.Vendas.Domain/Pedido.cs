@@ -1,5 +1,6 @@
 ﻿using FluentValidation.Results;
 using NerdStore.Core.DomainObjects;
+using static NerdStore.Vendas.Domain.Voucher;
 
 namespace NerdStore.Vendas.Domain
 {
@@ -9,6 +10,7 @@ namespace NerdStore.Vendas.Domain
         public static int MIN_UNIDADES_ITEM => 1;
         public Guid ClienteId { get; private set; }
         public decimal ValorTotal { get; private set; }
+        public decimal Desconto { get; private set; }
         public Voucher Voucher { get; private set; }
         public bool VoucherAplicado { get; private set; }
 
@@ -24,6 +26,29 @@ namespace NerdStore.Vendas.Domain
         private void CalcularValorPedido()
         {
             ValorTotal = PedidoItems.Sum(x => x.CalcularValor());
+        }
+
+        public void CalcularValorTotalDesconto()
+        {
+            if (!VoucherAplicado) return;
+
+            decimal desconto = 0;
+            var valor = ValorTotal;
+            switch (Voucher.TipoDesconto)
+            {
+                case TipoDescontoVoucher.Valor:
+                    desconto = Voucher.ValorDesconto ?? 0;
+                    break;
+
+                case TipoDescontoVoucher.Porcentagem:
+                    desconto = (ValorTotal * Voucher.PercentualDesconto ?? 0) / 100;
+                    break;
+            }
+
+            valor -= desconto;
+
+            ValorTotal = valor < 0 ? 0 : valor;
+            Desconto = desconto;
         }
 
         private bool PedidoItemExistente(PedidoItem item)
@@ -63,6 +88,8 @@ namespace NerdStore.Vendas.Domain
 
             Voucher = voucher;
             VoucherAplicado = true;
+
+            CalcularValorTotalDesconto();
 
             return result;
         }

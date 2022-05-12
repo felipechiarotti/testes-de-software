@@ -311,3 +311,4 @@ C:\Users\felipe.giron\Documents\Workspace\testes-de-software\TDD\Tests\NerdStore
 C:\Users\felipe.giron\Documents\Workspace\testes-de-software\TDD\Tests\NerdStore.Vendas.Domain.Tests\obj\Debug\net6.0\NerdStore.Vendas.Domain.Tests.genruntimeconfig.cache
 C:\Users\felipe.giron\Documents\Workspace\testes-de-software\TDD\Tests\NerdStore.Vendas.Domain.Tests\obj\Debug\net6.0\ref\NerdStore.Vendas.Domain.Tests.dll
 C:\Users\felipe.giron\Documents\Workspace\testes-de-software\TDD\Tests\NerdStore.Vendas.Domain.Tests\bin\Debug\net6.0\FluentValidation.dll
+D:\Workspace\Learning\CSharp\Projetos\TestesDeSoftware\TDD\Tests\NerdStore.Vendas.Domain.Tests\bin\Debug\net6.0\FluentValidation.dll
